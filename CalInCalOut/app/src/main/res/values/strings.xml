@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Healthy24/7</string>
+    <string name="nav_nutrition">Nutrition</string>
+    <string name="nav_exercise">Exercise</string>
+    <string name="nav_bmi">BMI</string>
+    <string name="nav_profile">Profile</string>
+    <string name="title_activity_deelete">deelete</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search">SEARCH</string>
+    <string name="title_activity_bodymassindex">bodymassindex</string>
+    <string name="title_activity_basalmetabolicrate">basalmetabolicrate</string>
+</resources>

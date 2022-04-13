@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bodymassindex">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bmi_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:menu="@menu/nav_items">
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="WEIGHT"
+                android:textSize="16dp"
+                android:layout_height="32dp" />
+            <EditText
+                android:id="@+id/weight_input"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:hint="enter weight in kgs"
+                android:layout_height="32dp" />
+
+
+            <TextView
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:text="HEIGHT"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:padding="8dp"
+                android:id="@+id/height_input"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:hint="enter height in cm"
+                android:layout_height="32dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="calculate BMI"
+                android:id="@+id/calculateBmi"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:id="@+id/bmiAnswer"
+                android:layout_width="match_parent"
+                android:textSize="16dp"
+                android:text=""
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

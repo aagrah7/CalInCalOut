@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".basalmetabolicrate">
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bmi_nav"
+        app:menu="@menu/nav_items"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="56dp">
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/rgroup"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male_radio_button"
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="Male" />
+                <RadioButton
+                    android:id="@+id/female_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="WEIGHT"
+                android:textSize="16dp"
+                android:layout_height="32dp" />
+            <EditText
+                android:id="@+id/weight_input"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:hint="enter weight in kgs"
+                android:layout_height="32dp" />
+
+
+            <TextView
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:text="HEIGHT"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:padding="8dp"
+                android:id="@+id/height_input"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:hint="enter height in cm"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:text="AGE"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:padding="8dp"
+                android:id="@+id/age_input"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:hint="enter age in 15-80 years"
+                android:layout_height="32dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="calculate BMI"
+                android:id="@+id/calculateBmi"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:id="@+id/bmiAnswer"
+                android:layout_width="match_parent"
+                android:textSize="16dp"
+                android:text=""
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

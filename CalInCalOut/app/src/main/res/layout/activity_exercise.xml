@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/exercise_nav"
+        app:menu="@menu/nav_items"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="56dp">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/exercise_frame"
+        android:layout_above="@+id/exercise_nav"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/exercisephoto"
+                    android:layout_height="240dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:text="Pushup"
+                        android:layout_width="match_parent"
+                        android:id="@+id/pushup"
+                        android:layout_weight="1"
+                        android:textSize="8dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:text="Steps Walked"
+                        android:layout_width="match_parent"
+                        android:id="@+id/stepswalked"
+                        android:textSize="8dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:text="Meditation"
+                        android:layout_width="match_parent"
+                        android:id="@+id/meditation"
+                        android:layout_weight="1"
+                        android:textSize="8dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:text="Plank"
+                        android:layout_width="match_parent"
+                        android:id="@+id/plank"
+                        android:textSize="8dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</RelativeLayout>
